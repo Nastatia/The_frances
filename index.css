@@ -1,0 +1,403 @@
+._{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fee2b3;
+    color: black;
+    font-family: 'Playfair Display', serif;
+
+}
+.bg-img {
+    background-image: url("img/chef8.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    
+  }
+  .bg-text {
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
+  }
+  .dropbtn {
+    color: white;
+    /* padding: 16px; */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 50px;
+    z-index:99px;
+  }
+  .dropdown {
+    position: relative;
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+.navbar {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+
+}
+.web-title{
+    font-size: 2.0rem;
+    font-family: 'Playfair Display', serif;
+    margin-left: 20px;
+    color: whitesmoke;
+    
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    list-style: none;
+     margin-right: 40px;
+} 
+.navbar-links li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0.2rem;
+    display: inline-block;
+    font-size: 13px;
+}
+.open-links li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0.2rem;
+    display: block;
+}
+.open-links li{
+    list-style: none;
+}
+ .toggle-but{
+    position: absolute;
+    top: -0.9rem;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 21px;
+    margin-top: 10px; 
+ } 
+  .toggle-but .bar{
+    height: 2px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+} 
+.open{
+    display: none;
+}
+.overlay {  
+    height:0 ;
+    width: 100%;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: none;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-y: hidden; 
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 5%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 5px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    display: block; 
+    transition: 0.3s;
+    margin-inline: 10px;
+}
+.overlay a:hover, .overlay a:focus {
+    color: grey;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 15px;
+  }
+  .box1{margin-top: 20px;
+      text-align: center;
+      padding: 50px 50px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+  }
+  
+  .text1{
+      font-size: 50px;
+      font-family: 'Playfair Display', serif;
+  }
+  .box2{
+      margin-top: 30px;
+      height: 100vh;
+  }
+  .text2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+  }
+  .icon{
+      margin: auto;
+      align-items: center;
+      color: red;
+  }
+  .new{
+      color: rgb(209, 39, 39);
+      font-size: 30px;
+  }
+  .icon-wrap{
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      background-color: white;
+      border-radius: 50px;
+      padding: 6px 14px;
+      margin: 5px;
+  }
+  .icon-con{
+      margin-top: 25px;
+    float: right;
+  }
+  .test{
+    background-image: url("img/image4.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
+  }
+ 
+  .test2{
+    background-color: rgba(235, 187, 119, 0.9); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
+  }
+  .box3{
+      margin-top: 20vh;
+  }
+  .item{
+      height: 100px;
+      width: 50px;
+      border-radius: 20px;
+   }
+   .view-anim img{
+       -webkit-transition:  0.7s ease;
+       -moz-animation: 0.7s ease;
+       -o-transition: 0.7s ease;
+   }
+   .view-anim:hover img{
+    -webkit-transform:  scale(1.1,1,1);
+    -moz-transform: scale(1.1,1,1);
+    -o-transform: scale(1.1,1,1);
+    -ms-transform: scale(1.1,1,1);
+    transform: scale(1.1,1,1);
+}
+   .food1{
+    /* height: 150px; */
+    border-radius: 50px;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+   }
+   .food2{
+       margin-top: 20px;
+    height: 150px;
+    border-radius: 50px;
+    max-width: 100%;
+   filter: none;
+    object-fit: cover;
+   }
+ .box4{
+     text-align: center;
+     /* height: 100vh; */
+    }
+    .box5{
+        margin-top: 100px;
+    }
+    .test1{
+        background-image: url("img/image4.jpg");
+        min-height: 70vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;  
+      }
+     
+      .test3{
+        background-color: rgba(235, 187, 119, 0.9); 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 70vh;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        margin: 0;
+      }
+      .box6{
+          background-color: rgb(80, 75, 75);
+          color: whitesmoke;
+          /* height: 80vh; */
+          padding-top: 50px;
+      }
+      .connect{
+          margin-right: 40px;
+      }
+      .text3{
+          margin-top: 60px;
+          text-align: center;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 15px;
+          
+      }
+      .box7{
+          margin-inline: 20px;
+      }
+     
+  @media(max-width: 1000px) {
+   
+    .toggle-but{
+        display: flex;
+    }
+    .open{
+        display: flex;
+        position: absolute;
+        top: 35%;
+        left: 84%;
+    }
+    .overlay{
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        width:100%
+    }
+    .navbar-links li{
+        text-align: center;
+        padding-left: 55px;
+    }
+    .navbar-links li a{
+        padding: .5rem; 
+        text-align: center;
+        padding-left: 55px;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .web-title{
+        margin: 0%;
+    }
+    
+   
+
+}
+@media(max-width: 500px) {
+    .web-title{
+        margin: 0%;
+        padding-left: 10px;
+        font-size: 1.5rem;
+    }
+    .overlay .closebtn {
+        font-size: 20px;
+        top: 5px;
+        right: 5px;
+        
+    }
+    .text1{
+        font-size: 30px;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    
+     .icon.con{
+         margin-bottom: 30px;
+     }
+
+}
+@media(max-width: 700px) {
+.bg-img {
+    background-image: url("img/chef8.jpg");
+    min-height: 130vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    
+  }
+  .bg-text {
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    height: 130vh;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
+  }
+}
