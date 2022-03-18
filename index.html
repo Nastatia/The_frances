@@ -22,7 +22,7 @@
           <ul>
            <li><a href="#" >Home</a></li>
            <li><a href="">Menu</a></li>
-           <li><a href="#" >Gallery</a></li>
+           <li><a href="gallery.html" >Gallery</a></li>
            <li><a href="#" >News$Events</a></li>
            <li><a href="#" >About</a></li>
            <li><a href="#" >Contact</a></li>
@@ -99,20 +99,133 @@
      
    </div>
   <br><br>
+  <section>
   <div class="container">
     <div class="box2 col-lg-12 col-md-12 col-sm-12 col-12">
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
           <p class="text2">SELECT YOUR MEAL</p>
           <h3>POPULAR<span class="new"><strong> FOODS</strong></span></h3>
+          <div class="tab ">
+            <button class="tablinks" onclick="openMeal(event, 'breakfast')">Breakfast</button><br>
+            <button class="tablinks" onclick="openMeal(event, 'lunch')">Lunch</button><br>
+            <button class="tablinks" onclick="openMeal(event, 'dinner')">Dinner</button><br>
+            <button class="tablinks" onclick="openMeal(event, 'drinks')">Drinks</button>
+          </div>
         </div>
-        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
-
+        <div class="col-lg-7 col-md-7 col-sm-8 col-8">
+          <div id="breakfast" class="tabcontent">
+            <h3>Breakfast</h3>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="row justify-content-center">
+                <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                  <img src="img/breakfast.jpg " class="meal1">
+                  <h5>Pancakes and Eggs<br><span style="color: orangered;">$15.00 </span></h5>
+                 
+                  <img src="img/breakfast1.jpg "class="meal2">
+                  <h5>Sandwich, Hotdogs and Chips<br><span style="color: orangered;">$14.00 </span></h5>
+                </div>
+                <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                  <img src="img/breakfast2.jpg "class="meal1">
+                  <h5>Italian breakfast<br><span style="color: orangered;">$19.00 </span></h5>
+                  <img src="img/breakfast3.jpg" class="meal2">
+                  <h5>ToastBread and Eggs<br><span style="color: orangered;">$13.00 </span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="lunch" class="tabcontent">
+            <h3>Lunch</h3>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="row justify-content-center">
+                <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                  <img src="img/lunch.jpg " class="meal1">
+                  <h5>Lunch 1<br><span style="color: orangered;">$15.00 </span></h5>
+                 
+                  <img src="img/lunch1.jpg "class="meal2">
+                  <h5>Lunch 2<br><span style="color: orangered;">$14.00 </span></h5>
+                </div>
+                <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                  <img src="img/lunch2.jpg "class="meal1">
+                  <h5>Lunch 3<br><span style="color: orangered;">$19.00 </span></h5>
+                  <img src="img/luch3.jpg" class="meal2">
+                  <h5>Lunch 4<br><span style="color: orangered;">$13.00 </span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="dinner" class="tabcontent">
+            <h3>dinner</h3>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="row justify-content-center">
+                <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                  <img src="img/dinner.jpg " class="meal1">
+                  <h5>Dinner 1<br><span style="color: orangered;">$15.00 </span></h5>
+                 
+                  <img src="img/dinner1.jpg "class="meal2">
+                  <h5>Dinner 3<br><span style="color: orangered;">$14.00 </span></h5>
+                </div>
+                <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                  <img src="img/dinner2.jpg "class="meal1">
+                  <h5>Dinner 2<br><span style="color: orangered;">$19.00 </span></h5>
+                  <img src="img/dinner3.jpg" class="meal2">
+                  <h5>Dinner 4<br><span style="color: orangered;">$13.00 </span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="drinks" class="tabcontent">
+            <h3>Drinks</h3>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="row justify-content-center">
+                <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                  <img src="img/drink.jpg " class="meal1">
+                  <h5>Drink 1<br><span style="color: orangered;">$15.00 </span></h5>
+                 
+                  <img src="img/drink1.jpg "class="meal2">
+                  <h5>Drink 3<br><span style="color: orangered;">$14.00 </span></h5>
+                </div>
+                <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                  <img src="img/drinks2.jpg "class="meal1">
+                  <h5>Drink 2<br><span style="color: orangered;">$19.00 </span></h5>
+                  <img src="img/drinks3.jpg" class="meal2">
+                  <h5>Drink 4<br><span style="color: orangered;">$13.00 </span></h5>
+                </div>
+              </div>
+            </div>
+         </div>
         </div>
-
+     </div>
+   </div>
+   <div class="box4 container">
+    <div class="box5 row justify-content-center">
+      <p class="text2"><strong>CHOOSE DESSERT</strong></p>
+      <h3>Popular<span class="new"><strong> Desserts</strong></span></h3>
+      <div  class="box3 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+            <img src="img/dessert.jpg "class="food1">
+                  <h5>Glazed Doughnut<br><span style="color: orangered;">$6.00 </span></h5>
+          </div> 
+          <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+            <img src="img/dessert2.jpg "class="food1">
+            <h5>Cup Icecream<br><span style="color: orangered;">$10.00 </span></h5>  
+          </div> 
+          <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+            <img src="img/dessert3.jpg "class="food1">
+                  <h5>Muffins<br><span style="color: orangered;">$8.00 </span></h5>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+            <img src="img/dessert4.jpg "class="food1">
+                  <h5>Cup cakes<br><span style="color: orangered;">$8.00 </span></h5>
+          </div> 
+        </div>
       </div>
     </div>
-  </div>
+ </section>
+
   <section>
     <div class=" test">
       <div class="container-fluid test2">
@@ -123,18 +236,27 @@
                 <p class="text2">TESTIMONIALS</p>
                 <h3>Satisfied<span class="new"><strong> Customers</strong></span></h3>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="col-lg-6 col-md-7 col-sm-12 col-12">
                 <p class="text2">GALLERIES</p>
                 <h3>Photo<span class="new"><strong> Galleries</strong></span></h3>
                 <div class="col-lg-12">
                   <div class="row">
                     <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
-                      <img src="img/chef4.jpg " class="food1">
-                      <img src="img/image2.jpg "class="food2">
+                      <img src="img/breakfast.jpg " class="food1">
+                      <img src="img/dinner3.jpg "class="food2">
                     </div>
                     <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
-                      <img src="img/image1.jpg "class="food1">
-                      <img src="img/chef8.jpg " class="food2">
+                      <img src="img/dinner1.jpg "class="food1">
+                      <img src="img/lunch1.jpg " class="food2">
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                    <div class="row justify-content-center">
+                      <div class="text-center">
+                        <button type="button" class="btn btn-danger text2"><a href="gallery.html" ><strong>MORE GALLERIES</strong></a>
+                        </button> 
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -144,7 +266,6 @@
         </div>
       </div>
     </div>
-    
   </section>
 
   <section>
@@ -241,18 +362,4 @@
     </div>
   </section> 
 </body>
-<script>
-
-
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-
-
-
-</script>
 </html>

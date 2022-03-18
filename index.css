@@ -172,12 +172,13 @@ body {
   }
   
   .text1{
-      font-size: 50px;
+      font-size: 70px;
+      font-weight: 20px;
       font-family: 'Playfair Display', serif;
   }
   .box2{
       margin-top: 30px;
-      height: 100vh;
+     
   }
   .text2{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -206,26 +207,87 @@ body {
       margin-top: 25px;
     float: right;
   }
+  .tab {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 50px;
+  transition: 0.3s;
+  letter-spacing: 2px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin-inline:"15px";
+}
+.tab button:hover {
+  background-color: whitesmoke;
+  color: orangered;
+}
+.tab button.active {
+  background-color: whitesmoke;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
   .test{
     background-image: url("img/image4.jpg");
-    min-height: 100vh;
+    min-height: 130vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;  
   }
- 
   .test2{
     background-color: rgba(235, 187, 119, 0.9); 
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     transform: translate(-50%, -50%);
     z-index: 2;
     margin: 0;
   }
+  .btn{
+    padding: .5rem .5rem;
+    border-radius: 20px;
+    background-color:red;
+    color: white;
+}
+.btn a{
+  color: white;
+    text-decoration: none;
+}
+.dessert{
+  height: 100px;
+  width: 100px;
+}
+.box8{
+  margin: 0;
+  border-color:rgb(80, 75, 75) ;
+  border: 2px solid;
+  border-radius: 20px;
+}
+
   .box3{
       margin-top: 20vh;
   }
@@ -247,17 +309,35 @@ body {
     transform: scale(1.1,1,1);
 }
    .food1{
-    /* height: 150px; */
-    border-radius: 50px;
+    height: 200px;
+    border-radius: 30px;
     max-width: 100%;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
+
    }
    .food2{
        margin-top: 20px;
-    height: 150px;
-    border-radius: 50px;
+    height: 200px;
+    border-radius: 30px;
     max-width: 100%;
+   filter: none;
+    object-fit: cover;
+   }
+   .meal1{
+    height: 220px;
+    border-radius: 15px;
+    max-width: 100%;
+    /* overflow: hidden; */
+    filter: none;
+    object-fit: cover;
+
+   }
+   .meal2{
+    margin-top: 20px;
+    height: 220px;
+    border-radius: 15px;
+    max-width: 100%;
+    /* overflow: hidden; */
    filter: none;
     object-fit: cover;
    }
@@ -377,7 +457,7 @@ body {
      }
 
 }
-@media(max-width: 700px) {
+@media(max-width: 770px) {
 .bg-img {
     background-image: url("img/chef8.jpg");
     min-height: 130vh;
@@ -399,5 +479,30 @@ body {
     transform: translate(-50%, -50%);
     z-index: 2;
     margin: 0;
+  }
+  .test{
+    background-image: url("img/image4.jpg");
+    min-height: 200vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
+  }
+  .test2{
+    background-color: rgba(235, 187, 119, 0.9); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 200vh;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
+  }
+  .meal1{
+    margin-top: 20px;
+  }
+  .food1{
+    margin-top: 20px;
   }
 }
