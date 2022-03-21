@@ -1,4 +1,4 @@
-_{
+._{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,13 +6,13 @@ _{
 body {
     padding: 0;
     margin: 0;
-    background-color: #fee2b3;
     color: black;
     font-family: 'Playfair Display', serif;
+    background-color: #fee2b3;
 
 }
 .bg-img {
-    background-image: url("img/chef8.jpg");
+    background-image: url("img/lunch1.jpg");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,15 +164,16 @@ body {
     left: 20px;
     font-size: 15px;
   }
-  .box1{margin-top: 20px;
+  .box1{
+    margin-top: 20px;
       text-align: center;
-      padding: 50px 50px;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding: 50px 50px;
    
   }
   
   .text1{
-      font-size: 70px;
+      font-size: 60px;
       font-weight: 20px;
       font-family: 'Playfair Display', serif;
   }
@@ -213,25 +214,9 @@ body {
     background-color:red;
     color: white;
 }
-.food1{
-    height: 200px;
-    border-radius: 5px;
-    max-width: 100%;
-    overflow: hidden;
-
-   }
-   .food2{
-       margin-top: 30px;
-    height: 200px;
-    border-radius: 5px;
-    max-width: 100%;
-   filter: none;
-    object-fit: cover;
-   }
-   .box6{
+.box6{
     background-color: rgb(80, 75, 75);
     color: whitesmoke;
-    /* height: 80vh; */
     padding-top: 50px;
 }
 .connect{
@@ -251,7 +236,10 @@ body {
     margin-inline: 20px;
     justify-content: center;
 }
-
+.party{
+    height: 300px;
+    max-width: 100%;
+}
 @media(max-width: 1000px) {
 
 .toggle-but{
@@ -343,9 +331,5 @@ width: 100%;
 transform: translate(-50%, -50%);
 z-index: 2;
 margin: 0;
-}
-
-.food1{
-margin-top: 20px;
 }
 }

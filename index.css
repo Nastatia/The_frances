@@ -12,7 +12,7 @@ body {
 
 }
 .bg-img {
-    background-image: url("img/chef8.jpg");
+    background-image: url("img/lunch1.jpg");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -296,51 +296,43 @@ body {
       width: 50px;
       border-radius: 20px;
    }
-   .view-anim img{
-       -webkit-transition:  0.7s ease;
-       -moz-animation: 0.7s ease;
-       -o-transition: 0.7s ease;
-   }
-   .view-anim:hover img{
-    -webkit-transform:  scale(1.1,1,1);
-    -moz-transform: scale(1.1,1,1);
-    -o-transform: scale(1.1,1,1);
-    -ms-transform: scale(1.1,1,1);
-    transform: scale(1.1,1,1);
-}
    .food1{
     height: 200px;
     border-radius: 30px;
     max-width: 100%;
     overflow: hidden;
-
    }
+   .image-anim{
+    -webkit-transition: all 500ms linear;
+transition: all 500ms linear;
+-webkit-transition-delay: 0.1s;
+transition-delay: 0.1s;
+-webkit-transform: scale(1);
+transform: scale(1);
+  }
+  .image-anim:hover{
+    -webkit-transform: scale(0.9);
+transform: scale(0.9);
+  }
    .food2{
        margin-top: 20px;
     height: 200px;
     border-radius: 30px;
     max-width: 100%;
-   filter: none;
-    object-fit: cover;
    }
    .meal1{
     height: 220px;
     border-radius: 15px;
     max-width: 100%;
-    /* overflow: hidden; */
-    filter: none;
-    object-fit: cover;
-
    }
+  
    .meal2{
     margin-top: 20px;
     height: 220px;
     border-radius: 15px;
-    max-width: 100%;
-    /* overflow: hidden; */
-   filter: none;
-    object-fit: cover;
+     max-width: 100%;
    }
+  
  .box4{
      text-align: center;
      /* height: 100vh; */
@@ -348,6 +340,7 @@ body {
     .box5{
         margin-top: 100px;
     }
+    
     .test1{
         background-image: url("img/image4.jpg");
         min-height: 70vh;
@@ -371,7 +364,7 @@ body {
       .box6{
           background-color: rgb(80, 75, 75);
           color: whitesmoke;
-          /* height: 80vh; */
+          
           padding-top: 50px;
       }
       .connect{
@@ -482,7 +475,7 @@ body {
   }
   .test{
     background-image: url("img/image4.jpg");
-    min-height: 200vh;
+    min-height: 250vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -493,7 +486,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 200vh;
+    height: 250vh;
     width: 100%;
     transform: translate(-50%, -50%);
     z-index: 2;
