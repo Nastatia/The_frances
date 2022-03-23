@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>MENU</title>
+</head>
+<body>
+    <div class="bg-img"></div>
+    <div class="container-fluid bg-text">
+      <nav  class="navbar">
+        <div class="web-title">
+          <strong>THE FRANCES</strong>
+        </div>
+        <div class="navbar-links">
+          <ul>
+           <li><a href="index.html" >Home</a></li>
+           <li><a href="#">Menu</a></li>
+           <li><a href="gallery.html" >Gallery</a></li>
+           <li><a href="events.html" >News$Events</a></li>
+           <li><a href="#" >About</a></li>
+           <li><a href="contact.html" >Contact</a></li>
+          <div class="dropdown"  onclick="myFunction()">
+            <button class="btn btn-danger dropbtn"  style="border-radius: 30px;">ORDER
+              <i class="fa fa-caret-down" ></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Delivery</a>
+              <a href="#">Book-A-Table</a>
+              <a href="#">Catering Services</a>
+            </div>
+          </div>
+         </ul>
+        </div>
+        <div id="myNav"  class="overlay open-links">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div  class="overlay-content">
+            <ul>
+              <li><a href="index.html" ><strong>Home</strong></a></li>
+              <li><a href="#"><strong>Menu </strong></a></li>
+              <li><a href="gallery.html" ><strong>Gallery</strong></a></li>
+              <li><a href="events.html" ><strong>News$Events</strong></a></li>
+              <li><a href="#" ><strong>About</strong></a></li>
+              <li><a href="contact.html" ><strong>Contact</strong></a></li>
+              <div class="dropdown"  onclick="myFunction()">
+                <button class="btn btn-danger dropbtn"  style="border-radius: 30px;">ORDER
+                  <i class="fa fa-caret-down" ></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Delivery</a>
+                  <a href="#">Book-A-Table</a>
+                  <a href="#">Catering Services</a>
+                </div>
+              </div>
+           </ul>
+          </div>
+       </div>
+       <div class="open" onclick="openNav()"><a href="#" class="toggle-but">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       </a></div>
+        
+      </nav>
+      <div class=" container mt-5">
+        <div class="row justify-content-center">
+         <div class="box1 col-lg-8 col-md-10 col-sm-12 col-12">
+            <p class="text2"><strong>GET IN TOUCH</strong></p>
+           <h4 class="text1"><strong>Our Main Meal</strong></h4>
+           <p><strong>Come Hungry, Leave Happy!</strong></p>
+           <p> ipsum dolor sit amet consectetur, adipisicing elit. Quam nemo sint ad!
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nemo nostrum est 
+             itaque odio! Est a ipsa quo non voluptatibus?
+            </p>
+         </div>
+       </div>
+     </div>
+
+     <div class="icon-con">
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-instagram" aria-hidden="true"></i></a>
+             </div>
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+             </div>
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-twitter" aria-hidden="true"></i></a>
+             </div>
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-facebook" aria-hidden="true"></i></a>
+             </div>
+     </div>  
+   </div>
+
+   <section>
+    <div class="container mt-5">
+      <div class="box2 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+            <div class="tab ">
+              <button class="tablinks active" onclick="openMeal(event, 'breakfast')">Breakfast</button><br>
+              <button class="tablinks" onclick="openMeal(event, 'lunch')">Lunch</button><br>
+              <button class="tablinks" onclick="openMeal(event, 'dinner')">Dinner</button><br>
+              <button class="tablinks" onclick="openMeal(event, 'drinks')">Drinks</button>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-8 col-8">
+            <div id="breakfast" class="tabcontent active">
+              <h3>Breakfast</h3>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="row justify-content-center">
+                  <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="img/breakfast.jpg " class="meal1 image-anim">
+                    <h5>Pancakes and Eggs<br><span style="color: orangered;">$15.00 </span></h5>
+                   
+                    <img src="img/breakfast1.jpg "class="meal2 image-anim">
+                    <h5>Sandwich, Hotdogs and Chips<br><span style="color: orangered;">$14.00 </span></h5>
+                  </div>
+                  <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="img/breakfast2.jpg "class="meal1 image-anim">
+                    <h5>Italian breakfast<br><span style="color: orangered;">$19.00 </span></h5>
+                    <img src="img/breakfast3.jpg" class="meal2 image-anim">
+                    <h5>ToastBread and Eggs<br><span style="color: orangered;">$13.00 </span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="lunch" class="tabcontent">
+              <h3>Lunch</h3>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="row justify-content-center">
+                  <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="img/lunch.jpg " class="meal1 image-anim">
+                    <h5>Lunch 1<br><span style="color: orangered;">$15.00 </span></h5>
+                   
+                    <img src="img/lunch1.jpg "class="meal2 image-anim">
+                    <h5>Lunch 2<br><span style="color: orangered;">$14.00 </span></h5>
+                  </div>
+                  <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="img/lunch2.jpg "class="meal1 image-anim">
+                    <h5>Lunch 3<br><span style="color: orangered;">$19.00 </span></h5>
+                    <img src="img/luch3.jpg" class="meal2 image-anim">
+                    <h5>Lunch 4<br><span style="color: orangered;">$13.00 </span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="dinner" class="tabcontent">
+              <h3>dinner</h3>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="row justify-content-center">
+                  <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="img/dinner.jpg " class="meal1 image-anim">
+                    <h5>Dinner 1<br><span style="color: orangered;">$15.00 </span></h5>
+                   
+                    <img src="img/dinner1.jpg "class="meal2 image-anim">
+                    <h5>Dinner 3<br><span style="color: orangered;">$14.00 </span></h5>
+                  </div>
+                  <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="img/dinner2.jpg "class="meal1 image-anim">
+                    <h5>Dinner 2<br><span style="color: orangered;">$19.00 </span></h5>
+                    <img src="img/dinner3.jpg" class="meal2 image-anim">
+                    <h5>Dinner 4<br><span style="color: orangered;">$13.00 </span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="drinks" class="tabcontent">
+              <h3>Drinks</h3>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="row justify-content-center">
+                  <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="img/drink.jpg " class="meal1 image-anim">
+                    <h5>Drink 1<br><span style="color: orangered;">$15.00 </span></h5>
+                   
+                    <img src="img/drink1.jpg "class="meal2 image-anim">
+                    <h5>Drink 3<br><span style="color: orangered;">$14.00 </span></h5>
+                  </div>
+                  <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="img/drinks2.jpg "class="meal1 image-anim">
+                    <h5>Drink 2<br><span style="color: orangered;">$19.00 </span></h5>
+                    <img src="img/drinks3.jpg" class="meal2 image-anim">
+                    <h5>Drink 4<br><span style="color: orangered;">$13.00 </span></h5>
+                  </div>
+                </div>
+              </div>
+           </div>
+          </div>
+       </div>
+     </div>
+     <div class="box4 container">
+      <div class="box5 row justify-content-center">
+        <p class="text2"><strong>CHOOSE DESSERT</strong></p>
+        <h3>Popular<span class="new"><strong> Desserts</strong></span></h3>
+        <div  class="box3 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <img src="img/dessert.jpg "class="food1">
+                    <h5>Glazed Doughnut<br><span style="color: orangered;">$6.00 </span></h5>
+            </div> 
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <img src="img/dessert2.jpg "class="food1">
+              <h5>Cup Icecream<br><span style="color: orangered;">$10.00 </span></h5>  
+            </div> 
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <img src="img/dessert3.jpg "class="food1">
+                    <h5>Muffins<br><span style="color: orangered;">$8.00 </span></h5>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+              <img src="img/dessert4.jpg "class="food1">
+                    <h5>Cup cakes<br><span style="color: orangered;">$8.00 </span></h5>
+            </div> 
+          </div>
+        </div>
+      </div>
+   </section>
+
+   <section> 
+    <div class="box6 container-fluid">
+      <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="row justify-content-center">
+           <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+              <h6>About THE FRANCES</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Culpa nisi, laboriosam dignissimos repellendus a 
+                reprehenderit laborum fuga, distinctio odio animi dolores, esse iure 
+                consectetur unde ab incidunt deserunt harum dicta!</p>
+                <br><br>
+                <h6>Connect</h6>
+               <div class="icon-con connect">
+                  <div class="icon-wrap">
+                   <a href="#"><i class="icon fa-brands fa-instagram" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="icon-wrap">
+                   <a href="#"><i class="icon fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="icon-wrap">
+                   <a href="#"><i class="icon fa-brands fa-twitter" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="icon-wrap">
+                   <a href="#"><i class="icon fa-brands fa-facebook" aria-hidden="true"></i></a>
+                  </div>
+                 </div>  
+            </div>
+            
+            <div class="mt-5 col-lg-8 col-md-8 col-sm-12 col-12">
+              <div class="row justify-content-center">
+                <div class="box7 col-lg-3 col-md-3 col-sm-12 col-12">
+                  <h6>Services</h6>
+                  <p>Lorem ipsum dolor, sit amet consectetur
+                     adipisicing elit. Consectetur beatae eveniet
+                      doloribus odit iste perferendis.</p>
+                </div>
+                <div class="box7 col-lg-3 col-md-3 col-sm-12 col-12">
+                  <h6>Contact</h6>
+                  <p>Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Consectetur beatae eveniet
+                     doloribus odit iste perferendis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6 class="text3">Copyright©2022 All Right Reserved</h6>
+      </div>
+    </div>
+  </section> 
+  
+</body>
+</html>

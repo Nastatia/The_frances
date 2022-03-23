@@ -12,7 +12,7 @@ body {
 
 }
 .bg-img {
-    background-image: url("img/lunch1.jpg");
+    background-image: url("../img/lunch1.jpg");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -335,7 +335,7 @@ transform: scale(0.9);
 }
 @media(max-width: 770px) {
 .bg-img {
-background-image: url("img/chef8.jpg");
+background-image: url("../img/lunch1.jpg");
 min-height: 130vh;
 background-position: center;
 background-repeat: no-repeat;

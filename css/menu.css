@@ -12,7 +12,7 @@ body {
 
 }
 .bg-img {
-    background-image: url("img/lunch1.jpg");
+    background-image: url("../img/lunch1.jpg");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -243,31 +243,7 @@ body {
   from {opacity: 0;}
   to {opacity: 1;}
 }
-
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-  .test{
-    background-image: url("img/image4.jpg");
-    min-height: 130vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;  
-  }
-  .test2{
-    background-color: rgba(235, 187, 119, 0.9); 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 130vh;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    margin: 0;
-  }
-  .btn{
+.btn{
     padding: .5rem .5rem;
     border-radius: 20px;
     background-color:red;
@@ -277,32 +253,7 @@ body {
   color: white;
     text-decoration: none;
 }
-.dessert{
-  height: 100px;
-  width: 100px;
-}
-.box8{
-  margin: 0;
-  border-color:rgb(80, 75, 75) ;
-  border: 2px solid;
-  border-radius: 20px;
-}
-
-  .box3{
-      margin-top: 20vh;
-  }
-  .item{
-      height: 100px;
-      width: 50px;
-      border-radius: 20px;
-   }
-   .food1{
-    height: 200px;
-    border-radius: 30px;
-    max-width: 100%;
-    overflow: hidden;
-   }
-   .image-anim{
+.image-anim{
     -webkit-transition: all 500ms linear;
 transition: all 500ms linear;
 -webkit-transition-delay: 0.1s;
@@ -314,13 +265,7 @@ transform: scale(1);
     -webkit-transform: scale(0.9);
 transform: scale(0.9);
   }
-   .food2{
-       margin-top: 20px;
-    height: 200px;
-    border-radius: 30px;
-    max-width: 100%;
-   }
-   .meal1{
+  .meal1{
     height: 220px;
     border-radius: 15px;
     max-width: 100%;
@@ -332,170 +277,132 @@ transform: scale(0.9);
     border-radius: 15px;
      max-width: 100%;
    }
-  
- .box4{
-     text-align: center;
-     /* height: 100vh; */
-    }
-    .box5{
-        margin-top: 100px;
-    }
+   .box4{
+    text-align: center;
+    /* height: 100vh; */
+   }
+   .box5{
+       margin-top: 100px;
+   }
+   .food1{
+    height: 200px;
+    border-radius: 30px;
+    max-width: 100%;
+    overflow: hidden;
+   }
+.box6{
+    background-color: rgb(80, 75, 75);
+    color: whitesmoke;
     
-    .test1{
-        background-image: url("img/image4.jpg");
-        min-height: 70vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;  
-      }
-     
-      .test3{
-        background-color: rgba(235, 187, 119, 0.9); 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        height: 70vh;
-        width: 100%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        margin: 0;
-      }
-      .box6{
-          background-color: rgb(80, 75, 75);
-          color: whitesmoke;
-          
-          padding-top: 50px;
-      }
-      .connect{
-          margin-right: 40px;
-      }
-      .text3{
-          margin-top: 60px;
-          text-align: center;
-          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          font-size: 15px;
-          
-      }
-      .box7{
-          margin-inline: 20px;
-      }
-     
-  @media(max-width: 1000px) {
-   
-    .toggle-but{
-        display: flex;
-    }
-    .open{
-        display: flex;
-        position: absolute;
-        top: 35%;
-        left: 84%;
-    }
-    .overlay{
-        display: flex;
-    }
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar-links ul{
-        flex-direction: column;
-        width:100%
-    }
-    .navbar-links li{
-        text-align: center;
-        padding-left: 55px;
-    }
-    .navbar-links li a{
-        padding: .5rem; 
-        text-align: center;
-        padding-left: 55px;
-    }
-    .navbar-links.active{
-        display: flex;
-    }
+    padding-top: 50px;
+}
+.connect{
+    margin-right: 40px;
+}
+.text3{
+    margin-top: 60px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    
+}
+.box7{
+    margin-inline: 20px;
+}
 
-    .web-title{
-        margin: 0%;
-    }
-    
-   
+@media(max-width: 1000px) {
+
+.toggle-but{
+  display: flex;
+}
+.open{
+  display: flex;
+  position: absolute;
+  top: 35%;
+  left: 84%;
+}
+.overlay{
+  display: flex;
+}
+.navbar-links {
+  display: none;
+  width: 100%;
+}
+.navbar{
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navbar-links ul{
+  flex-direction: column;
+  width:100%
+}
+.navbar-links li{
+  text-align: center;
+  padding-left: 55px;
+}
+.navbar-links li a{
+  padding: .5rem; 
+  text-align: center;
+  padding-left: 55px;
+}
+.navbar-links.active{
+  display: flex;
+}
+
+.web-title{
+  margin: 0%;
+}
+
+
 
 }
 @media(max-width: 500px) {
-    .web-title{
-        margin: 0%;
-        padding-left: 10px;
-        font-size: 1.5rem;
-    }
-    .overlay .closebtn {
-        font-size: 20px;
-        top: 5px;
-        right: 5px;
-        
-    }
-    .text1{
-        font-size: 30px;
-        font-family: 'Playfair Display', serif;
-    }
-    
-    
-     .icon.con{
-         margin-bottom: 30px;
-     }
+.web-title{
+  margin: 0%;
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+.overlay .closebtn {
+  font-size: 20px;
+  top: 5px;
+  right: 5px;
+  
+}
+.text1{
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.icon.con{
+   margin-bottom: 30px;
+}
 
 }
 @media(max-width: 770px) {
 .bg-img {
-    background-image: url("img/chef8.jpg");
-    min-height: 130vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    
-    
-  }
-  .bg-text {
-    background-color: rgba(0,0,0, 0.4); 
-    color: white;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    height: 130vh;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    margin: 0;
-  }
-  .test{
-    background-image: url("img/image4.jpg");
-    min-height: 250vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;  
-  }
-  .test2{
-    background-color: rgba(235, 187, 119, 0.9); 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 250vh;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    margin: 0;
-  }
-  .meal1{
-    margin-top: 20px;
-  }
-  .food1{
+background-image: url("../img/lunch1.jpg");
+min-height: 130vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
+
+}
+.bg-text {
+background-color: rgba(0,0,0, 0.4); 
+color: white;
+position: absolute;
+top: 65%;
+left: 50%;
+height: 130vh;
+width: 100%;
+transform: translate(-50%, -50%);
+z-index: 2;
+margin: 0;
+}
+.meal1{
     margin-top: 20px;
   }
 }
