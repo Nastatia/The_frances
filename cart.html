@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>SHOPPING CART</title>
+</head>
+<body>
+  <nav  class="navbar">
+    <div class="web-title">
+      <strong>THE FRANCES<span style="color: #990012;">.</span></strong>
+    </div>
+    <div class="navbar-links">
+      <ul>
+       <li><a href="index.html" >Home</a></li>
+       <li><a href="menu.html">Menu</a></li>
+       <li><a href="gallery.html" >Gallery</a></li>
+       <li><a href="events.html" >News$Events</a></li>
+       <li><a href="about.html" >About</a></li>
+       <li><a href="contact.html" >Contact</a></li>
+       <li><a href="login.html" >Login</a><a href="Register.html" ></a>/Register</a></li> 
+      <div class="dropdown"  onclick="myFunction()">
+        <button class="btn dropbtn"  style="border-radius: 30px;background-color: #990012;">ORDER
+          <i class="fa fa-caret-down" ></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="delivery.html">Delivery</a>
+          <a href="booking.html">Book-A-Table</a>
+        </div>
+      </div>
+     </ul>
+    </div>
+    <div id="myNav"  class="overlay open-links">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div  class="overlay-content">
+        <ul>
+          <li><a href="index.html" ><strong>Home</strong></a></li>
+          <li><a href="menu.html"><strong>Menu </strong></a></li>
+          <li><a href="gallery.html" ><strong>Gallery</strong></a></li>
+          <li><a href="events.html" ><strong>News$Events</strong></a></li>
+          <li><a href="about.html" ><strong>About</strong></a></li>
+          <li><a href="contact.html" ><strong>Contact</strong></a></li>
+          <li><a href="login.html" >Login</a><a href="Register.html" ></a>/Register</a></li>
+          <div class="dropdown"  onclick="thisFunction()">
+            <button class="btn dropbtn"  style="border-radius: 30px; background-color: #990012;">ORDER
+              <i class="fa fa-caret-down" ></i>
+            </button>
+            <div id="myDrops" class="dropdown-content">
+              <a href="delivery.html">Delivery</a>
+              <a href="booking.html">Book-A-Table</a>
+            </div>
+          </div>
+       </ul>
+      </div>
+   </div>
+   <div class="open" onclick="openNav()"><a href="#" class="toggle-but">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+   </a></div>
+    
+  </nav>
+  <div class="container">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+          <div class="row  justify-content-center">
+               <div class="col-lg-9 col-md-12 col-sm-12 col-12 mt-5">
+                   <div class="row justify-content-center">
+                      <div class="col-lg-9 col-md-9 col-sm-8 col-7">
+                       <h5>shopping Cart </h5>
+                       </div>
+                     <div class="col-lg-2 col-md-2 col-sm-4 col-5">
+                      <h5>3 Items </h5>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="row">
+                            <div class="col-lg-5 row-cols-md-5 col-sm-5 col-3">
+                                <h6>Meal</h6>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-3">
+                                <h6>Quantity</h6>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <h6>Total</h6>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                <h6>Remove</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-2">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-3">
+                                <img src="img/breakfast.jpg " class="meal1 image-anim">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-3">
+                                <div class="wrapper">
+                                    <span class="minus">-</span>
+                                    <span class="num">01</span>
+                                    <span class="plus">+</span>
+                                  </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-3 mt-3">
+                                <h6>₦1500.00</h6>
+                            </div>
+                            <div class="col-lg- 2col-md-2 col-sm-2 col-2 mt-3 ms-1">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div><hr>
+                    </div>
+                    <div class="col-lg-12 mt-2">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-3">
+                                <img src="img/lunch3.jpg " class="meal1 image-anim">
+                                <h6>lunch3</h6>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-3">
+                                <div class="wrapper">
+                                    <span class="minus">-</span>
+                                    <span class="num">01</span>
+                                    <span class="plus">+</span>
+                                  </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-3 mt-3">
+                                <h6>₦2500.00</h6>
+                            </div>
+                            <div class="col-lg- 2col-md-2 col-sm-2 col-2 mt-3 ms-1">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div><hr>
+                    </div>
+                    <div class="col-lg-12 mt-2">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-3">
+                                <img src="img/lunch3.jpg " class="meal1 image-anim">
+                                <h6>lunch3</h6>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-3">
+                                <div class="wrapper">
+                                    <span class="minus">-</span>
+                                    <span class="num">01</span>
+                                    <span class="plus">+</span>
+                                  </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-3 mt-3">
+                                <h6>₦2500.00</h6>
+                            </div>
+                            <div class="col-lg- 2col-md-2 col-sm-2 col-2 mt-3 ms-1">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div><hr>
+                    </div>
+               </div>
+              <div class="col-lg-3 col-md-12 col-sm-12 col-12 mt-5" style="background-color: wheat;">
+                  <div class="row justify-content-center">
+                      <h5>Order Summary</h5>
+                    </div><hr>
+                </div>
+          </div>
+      </div>
+      <div class="col-lg-4">
+          <div class="row">
+              <div class="col-lg-1">
+              <i class="fa-solid fa-arrow-left"></i>
+             </div>
+              <div class="col-lg-5">
+             <h6>Continue shopping</h6>
+             </div>
+            </div>
+     </div>
+    </div>
+
+    <footer>
+        <section > 
+          <div class="box6 container-fluid mt-5">
+            <div class="container">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="row justify-content-center">
+                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <h6><strong>About THE FRANCES</strong></h6>
+                    <p>At THE FRANCES. we do not make meals, we make people happy. We believe 
+                      that eating healthy and tasty food improves lives and make them happy. Since 2021,
+                      we've been committed to bring healthy and tasty meal experience you won't find elsewhere.
+                    </p>
+                      <br><br>
+                      <h6>Connect</h6>
+                     <div class="icon-con connect">
+                        <div class="icon-wrap">
+                         <a href="#"><i class="icon fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="icon-wrap">
+                         <a href="#"><i class="icon fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="icon-wrap">
+                         <a href="#"><i class="icon fa-brands fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="icon-wrap">
+                         <a href="#"><i class="icon fa-brands fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                       </div>  
+                  </div>
+                  
+                  <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                    <div class="row justify-content-center">
+                      <div class="box7 col-lg-3 col-md-3 col-sm-12 col-12">
+                        <h6><strong>Services</strong></h6>
+                        <li><a href="#" >Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html" >Gallery</a></li>
+                        <li><a href="events.html" >News$Events</a></li>
+                       <li><a href="about.html" >About</a></li>
+                        <li><a href="contact.html" >Contact</a></li> 
+                        <li><a href="login.html" >Login</a><a href="register.html" >/ Register</a></li>
+                      </div>
+                      <div class="box7 col-lg-3 col-md-3 col-sm-12 col-12">
+                        <h6  class="last"><strong>Contact</strong></h6>
+                        <p>43 Taiwo street, Ibeju-Lekki</p>
+                          <p>+234 0765786756</p>
+                          <p>+234 0765786756</p>
+                          <p>anastatiaambrose@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h6 class="text3">Copyright©2022 All Right Reserved</h6>
+            </div>
+          </div>
+        </section> 
+    </footer>
+    <script>
+    
+        const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+      
+            let a = 1;
+            
+            plus.addEventListener("click", ()=>{
+             a++;
+             a = (a < 10) ? "0" + a : a;
+             num.innerText = a;
+            });
+      
+            minus.addEventListener("click", ()=>{
+              if(a > 1){
+              a--;
+              a = (a < 10) ? "0" + a : a;
+              num.innerText = a;
+              }
+            });
+      </script>  
+</body>
+</html>

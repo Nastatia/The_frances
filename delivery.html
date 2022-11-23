@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/delivery.css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>DELIVERY</title>
+</head>
+<body>
+    <div class="bg-img"></div>
+    <div class="container-fluid bg-text">
+      <nav  class="navbar">
+        <div class="web-title">
+          <strong>THE FRANCES<span style="color: #990012;">.</span></strong>
+        </div>
+        <div class="navbar-links">
+          <ul>
+           <li><a href="index.html" >Home</a></li>
+           <li><a href="menu.html">Menu</a></li>
+           <li><a href="gallery.html" >Gallery</a></li>
+           <li><a href="events.html" >News$Events</a></li>
+           <li><a href="about.html" >About</a></li>
+           <li><a href="contact.html" >Contact</a></li>
+           <li><a href="login.html" >Login</a><a href="Register.html" ></a>/Register</a></li>
+          <div class="dropdown"  onclick="myFunction()">
+            <button class="btn btn-danger dropbtn"  style="border-radius: 30px;">ORDER
+              <i class="fa fa-caret-down" ></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Delivery</a>
+              <a href="booking.html">Book-A-Table</a>
+            </div>
+          </div>
+         </ul>
+        </div>
+        <div id="myNav"  class="overlay open-links">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div  class="overlay-content">
+            <ul>
+              <li><a href="index.html" ><strong>Home</strong></a></li>
+              <li><a href="menu.html"><strong>Menu </strong></a></li>
+              <li><a href="gallery.html" ><strong>Gallery</strong></a></li>
+              <li><a href="events.html" ><strong>News$Events</strong></a></li>
+              <li><a href="about.html" ><strong>About</strong></a></li>
+              <li><a href="contact.html" ><strong>Contact</strong></a></li>
+              <li><a href="login.html" >Login</a><a href="Register.html" ></a>/Register</a></li>
+              <div class="dropdown"  onclick="thisFunction()">
+                <button class="btn btn-danger dropbtn"  style="border-radius: 30px;">ORDER
+                  <i class="fa fa-caret-down" ></i>
+                </button>
+                <div id="myDrops" class="dropdown-content">
+                  <a href="#">Delivery</a>
+                  <a href="booking.html">Book-A-Table</a>
+                </div>
+              </div>
+           </ul>
+          </div>
+       </div>
+       <div class="open" onclick="openNav()"><a href="#" class="toggle-but">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       </a></div>
+        
+      </nav>
+      <div class=" container mt-5">
+        <div class="row justify-content-center">
+         <div class="box1 col-lg-8 col-md-10 col-sm-12 col-12">
+            <p class="text2"><strong>PLACE YOUR ORDER</strong></p>
+           <h4 class="text1"><strong>Food Delivery</strong></h4>
+           <p><strong>Come Hungry, Leave Happy!</strong></p>
+           <p> Are you hungry?.. Place an order and get your food delivered to you
+             anywhere you are. At THE FRANCES we offer fast food delivery service nationwide. 
+            </p>
+         </div>
+       </div>
+     </div>
+
+     <div class="icon-con">
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-instagram" aria-hidden="true"></i></a>
+             </div>
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+             </div>
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-twitter" aria-hidden="true"></i></a>
+             </div>
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-facebook" aria-hidden="true"></i></a>
+             </div>
+     </div>  
+   </div>
+
+     
+        <section>
+          <div class="container">
+            <div class="box2 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                  <h4>SELECT YOUR<span class="new"><strong> MEAL</strong></span></h4>
+                  <div class="tab ">
+                    <button class="tablinks active" onclick="openMeal(event, 'breakfast')">Breakfast</button><br>
+                    <button class="tablinks" onclick="openMeal(event, 'lunch')">Lunch</button><br>
+                    <button class="tablinks" onclick="openMeal(event, 'dinner')">Dinner</button><br>
+                    <button class="tablinks" onclick="openMeal(event, 'drinks')">Drinks</button><br>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                  <div id="breakfast" class="tabcontent">
+                    <h3>Breakfast</h3>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                      <div class="row justify-content-center">
+                        <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                          <img src="img/breakfast.jpg " class="meal1 image-anim">
+                          <h5>Bacon, eggs, pancakes, and toast</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$19.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px;background-color:#990012; " >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/break4.jpg " class="meal2 image-anim">
+                          <h5>Sandwich with fried eggs</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012">$13.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px;background-color:#990012; " >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px;background-color:#990012; " >Add To Cart</a>
+                           </div>
+                          </div>
+                          
+
+                          <img src="img/breakfast1.jpg "class="meal2 image-anim">
+                          <h5>Breakfast 2</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$15.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                        </div>
+                        <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                          <img src="img/break5.jpg "class="meal1 image-anim">
+                          <h5>Fried eggs and sausages</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$19.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px;background-color:#990012; " >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012; " >Add To Cart</a>
+                           </div>
+                          </div>
+
+                          <img src="img/breakfast2.jpg "class="meal2 image-anim">
+                          <h5>Sandwich with fried eggs and sausages</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$20.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/breakfast3.jpg" class="meal2 image-anim">
+                          <h5>Breakfast 4<br></h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$13.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px;background-color:#990012; " >Add To Cart</a>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="lunch" class="tabcontent" style="display: none;">
+                    <h3>Lunch</h3>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                      <div class="row justify-content-center">
+                        <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                          <img src="img/lunch.jpg " class="meal1 image-anim">
+                          <h5>Biryani Rice</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$20.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn  dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/lunch3.jpg "class="meal2 image-anim">
+                          <h5>Vietnam Rice Recipe</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$23.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012; " >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+
+                          <img src="img/lunch1.jpg "class="meal2 image-anim">
+                          <h5>Homemade Spanish Chicken Rice</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$23.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012; " >Add To Cart</a>
+                           </div>
+                          </div>
+                        </div>
+                        <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                          <img src="img/lunch2.jpg "class="meal1 image-anim">
+                          <h5>Game Hen with Orange Marsala Sauce</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$21.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                         </div>
+                         <div class="col-lg-10 mt-2 ms-4">
+                          <div class="row justify-content-center" >
+                            <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                         </div>
+                        </div>
+
+                         <img src="img/lunch5.jpg" class="meal2 image-anim">
+                         <h5>Indian chicken biryani</h5>
+                           <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$25.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+
+                          <img src="img/luch3.jpg" class="meal2 image-anim">
+                          <h5> Padthai, Thailand traditional food</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$25.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                            
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="dinner" class="tabcontent" style="display: none;">
+                    <h3>dinner</h3>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                      <div class="row justify-content-center">
+                        <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                          <img src="img/dinner.jpg " class="meal1 image-anim">
+                          <h5>Dinner 1</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color:#990012;">$19.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px;background-color:#990012; " >Order Now</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/dinner6.jpg" class="meal2 image-anim">
+                          <h5>Dinner 3</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$17.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px;background-color:#990012; " >Order Now</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/dinner1.jpg "class="meal2 image-anim">
+                          <h5>Dinner 5</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$20.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                        </div>
+                        <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                          <img src="img/dinner2.jpg "class="meal1 image-anim">
+                          <h5>Dinner 2</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$20.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn  dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/dinner4.jpg" class="meal2 image-anim">
+                          <h5>Dinner 4</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$17.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn  dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>  
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/dinner3.jpg" class="meal2 image-anim">
+                          <h5>Dinner 6</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$17.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="drinks" class="tabcontent" style="display: none;">
+                    <h3>Drinks</h3>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                      <div class="row justify-content-center">
+                        <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                          <img src="img/drink.jpg " class="meal1 image-anim">
+                          <h5>Drink 1</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$15.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px;background-color:#990012; " >Order Now</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/drink6.jpg "class="meal2 image-anim">
+                          <h5>Drink 3</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$14.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn btn-danger dropbtn"  style="border-radius: 30px; " >Order Now</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/drink1.jpg "class="meal2 image-anim">
+                          <h5>Drink 5</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$14.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                        </div>
+                        
+                        <div class="view-anim col-lg-6 col-md-6 col-sm-12 col-12">
+                          <img src="img/drinks2.jpg "class="meal1 image-anim">
+                          <h5>Drink 2</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$17.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                           </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/drinks3.jpg "class="meal2 image-anim">
+                          <h5>Drink 4</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$17.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                          <img src="img/drink5.jpg" class="meal2 image-anim">
+                          <h5>Drink 6</h5>
+                          <div class="row ">
+                            <div class="col-lg-5">
+                              <h5 style="color: #990012;">$13.00 </h5>
+                            </div>
+                            <div class="col-lg-6">
+                              <a href="register.html" class="btn dropbtn"  style="border-radius: 30px; background-color:#990012;" >Order Now</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-10 mt-2 ms-4">
+                            <div class="row justify-content-center" >
+                              <a href="cart.html" class="btn dropbtn"  style="border-radius: 20px; background-color:#990012;" >Add To Cart</a>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+                
+                </div>
+             </div>
+           </div>
+          </section>
+   
+
+
+     <footer>
+      <section> 
+        <div class="box6 container-fluid">
+          <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="row justify-content-center">
+               <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                  <h6><strong>About THE FRANCES</strong></h6>
+                  <p>At THE FRANCES. we do not make meals, we make people happy. We believe 
+                    that eating healthy and tasty food improves lives and make them happy. Since 2021,
+                    we've been committed to bring healthy and tasty meal experience you won't find elsewhere.
+                  </p>
+                    <br><br>
+                    <h6>Connect</h6>
+                   <div class="icon-con connect">
+                      <div class="icon-wrap">
+                       <a href="#"><i class="icon fa-brands fa-instagram" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="icon-wrap">
+                       <a href="#"><i class="icon fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="icon-wrap">
+                       <a href="#"><i class="icon fa-brands fa-twitter" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="icon-wrap">
+                       <a href="#"><i class="icon fa-brands fa-facebook" aria-hidden="true"></i></a>
+                      </div>
+                     </div>  
+                </div>
+                
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                  <div class="row justify-content-center">
+                    <div class="box7 col-lg-3 col-md-3 col-sm-12 col-12">
+                      <h6><strong>Services</strong></h6>
+                      <li><a href="#" >Home</a></li>
+                      <li><a href="menu.html">Menu</a></li>
+                      <li><a href="gallery.html" >Gallery</a></li>
+                      <li><a href="events.html" >News$Events</a></li>
+                     <li><a href="about.html" >About</a></li>
+                      <li><a href="contact.html" >Contact</a></li> 
+                      <li><a href="login.html" >Login</a><a href="register.html" >/ Register</a></li>
+                    </div>
+                    <div class="box7 col-lg-3 col-md-3 col-sm-12 col-12">
+                      <h6  class="last"><strong>Contact</strong></h6>
+                      <p>43 Taiwo street, Ibeju-Lekki</p>
+                        <p>+234 0765786756</p>
+                        <p>+234 0765786756</p>
+                        <p>anastatiaambrose@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6 class="text3">Copyright©2022 All Right Reserved</h6>
+          </div>
+        </div>
+      </section> 
+  </footer>
+</body>
+</html>

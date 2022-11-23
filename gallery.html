@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>GALLERY</title>
+</head>
+<body>
+    <div class="bg-img"></div>
+    <div class="container-fluid bg-text">
+      <nav  class="navbar">
+        <div class="web-title">
+          <strong>THE FRANCES<span style="color: #990012;">.</span></strong>
+        </div>
+        <div class="navbar-links">
+          <ul>
+           <li><a href="index.html" >Home</a></li>
+           <li><a href="menu.html">Menu</a></li>
+           <li><a href="#" >Gallery</a></li>
+           <li><a href="events.html" >News$Events</a></li>
+           <li><a href="about.html" >About</a></li>
+           <li><a href="contact.html" >Contact</a></li>
+           <li><a href="login.html" >Login</a><a href="Register.html" ></a>/Register</a></li>
+           <div class="dropdown"  onclick="thisFunction()">
+            <button class="btn btn-danger dropbtn"  style="border-radius: 30px;">ORDER
+              <i class="fa fa-caret-down" ></i>
+            </button>
+            <div id="myDrops" class="dropdown-content">
+              <a href="delivery.html">Delivery</a>
+              <a href="booking.html">Book-A-Table</a>
+            </div>
+          </div>
+         </ul>
+        </div>
+        <div id="myNav"  class="overlay open-links">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div  class="overlay-content">
+            <ul>
+              <li><a href="index.html" ><strong>Home</strong></a></li>
+              <li><a href="menu.html"><strong>Menu </strong></a></li>
+              <li><a href="#" ><strong>Gallery</strong></a></li>
+              <li><a href="events.html" ><strong>News$Events</strong></a></li>
+              <li><a href="about.html" ><strong>About</strong></a></li>
+              <li><a href="contact.html" ><strong>Contact</strong></a></li>
+              <li><a href="login.html" >Login</a><a href="Register.html" ></a>/Register</a></li>
+              <div class="dropdown"  onclick="myFunction()">
+                  <button class="btn btn-danger dropbtn"  style="border-radius: 30px;">ORDER
+                     <i class="fa fa-caret-down" ></i>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                     <a href="delivery.html">Delivery</a>
+                     <a href="booking.html">Book-A-Table</a>
+                   </div>
+              </div>
+           </ul>
+          </div>
+       </div>
+       <div class="open" onclick="openNav()"><a href="#" class="toggle-but">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       </a></div>
+        
+      </nav>
+      <div class=" container mt-5">
+        <div class="row justify-content-center">
+         <div class="box1 col-lg-7 col-md-10 col-sm-12 col-12">
+            <p class="text2"><strong>TAKE A LOOK</strong></p>
+           <h4 class="text1"><strong>Our Galleries</strong></h4>
+           <p><strong>Come Hungry, Leave Happy!</strong></p>
+           <p> Feed your eyes with our exotic meals and drinks made to reach
+             your optimum health and fitness.
+            </p>
+         </div>
+       </div>
+     </div>
+
+     <div class="icon-con">
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-instagram" aria-hidden="true"></i></a>
+             </div>
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+             </div>
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-twitter" aria-hidden="true"></i></a>
+             </div>
+             <div class="icon-wrap">
+              <a href="#"><i class="icon fa-brands fa-facebook" aria-hidden="true"></i></a>
+             </div>
+     </div>
+     
+   </div>
+
+  
+    <section>
+        <div class="container">
+            <div class="box1 col-lg-12 col-md-10 col-sm-12 col-12">
+                <div class="row justify-content-center">
+                     <div class="view-anim col-lg-3 col-md-3 col-sm-12 col-12">
+                       <img src="img/breakfast.jpg " class="food1 image-anim">
+                       <img src="img/dinner3.jpg "class="food2 image-anim">
+                       <img src="img/lunch.jpg "class="food2 image-anim">
+                       <img src="img/drinks2.jpg "class="food2 image-anim">
+                       <img src="img/lunch5.jpg " class="food2 image-anim">
+                       <img src="img/break5.jpg " class="food2 image-anim">
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                       <img src="img/dinner1.jpg "class="food1 image-anim">
+                       <img src="img/lunch1.jpg " class="food2 image-anim">
+                       <img src="img/drink1.jpg " class="food2 image-anim">
+                       <img src="img/dinner2.jpg " class="food2 image-anim">
+                       <img src="img/dinner5.jpg " class="food2 image-anim">
+                       <img src="img/drink5.jpg " class="food2 image-anim">
+                     </div>
+                     <div class="view-anim col-lg-3 col-md-3 col-sm-12 col-12">
+                      <img src="img/breakfast1.jpg "class="food1 image-anim">
+                      <img src="img/drink.jpg " class="food2 image-anim">
+                      <img src="img/breakfast3.jpg " class="food2 image-anim">
+                      <img src="img/dessert2.jpg " class="food2 image-anim">
+                      <img src="img/break4.jpg " class="food2 image-anim">
+                      <img src="img/dinner6.jpg " class="food2 image-anim">
+                    </div>
+                    <div class="view-anim col-lg-3 col-md-3 col-sm-12 col-12">
+                      <img src="img/breakfast2.jpg "class="food1 image-anim">
+                      <img src="img/luch3.jpg " class="food2 image-anim">
+                      <img src="img/dessert.jpg " class="food2 image-anim">
+                      <img src="img/lunch2.jpg " class="food2 image-anim">
+                      <img src="img/lunch4.jpg " class="food2 image-anim">
+                      <img src="img/drink6.jpg " class="food2 image-anim">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section> 
+      <div class="box6 container-fluid">
+        <div class="container">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="row justify-content-center">
+             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <h6><strong>About THE FRANCES</strong></h6>
+                <p>At THE FRANCES. we do not make meals, we make people happy. We believe 
+                  that eating healthy and tasty food improves lives and make them happy. Since 2021,
+                  we've been committed to bring healthy and tasty meal experience you won't find elsewhere.
+                </p>
+                  <br><br>
+                  <h6>Connect</h6>
+                 <div class="icon-con connect">
+                    <div class="icon-wrap">
+                     <a href="#"><i class="icon fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="icon-wrap">
+                     <a href="#"><i class="icon fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="icon-wrap">
+                     <a href="#"><i class="icon fa-brands fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="icon-wrap">
+                     <a href="#"><i class="icon fa-brands fa-facebook" aria-hidden="true"></i></a>
+                    </div>
+                   </div>  
+              </div>
+              
+              <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                <div class="row justify-content-center">
+                  <div class="box7 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <h6><strong>Services</strong></h6>
+                    <li><a href="#" >Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html" >Gallery</a></li>
+                    <li><a href="events.html" >News$Events</a></li>
+                   <li><a href="about.html" >About</a></li>
+                    <li><a href="contact.html" >Contact</a></li> 
+                    <li><a href="login.html" >Login</a><a href="register.html" >/ Register</a></li>
+                  </div>
+                  <div class="box7 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <h6  class="last"><strong>Contact</strong></h6>
+                    <p>43 Taiwo street, Ibeju-Lekki</p>
+                      <p>+234 0765786756</p>
+                      <p>+234 0765786756</p>
+                      <p>anastatiaambrose@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h6 class="text3">Copyright©2022 All Right Reserved</h6>
+        </div>
+      </div>
+    </section> 
+  
+</body>
+</html>
