@@ -159,14 +159,22 @@
                                </div>
                            </div>
                            <br>
-                           <input type="text" placeholder="Subject" required class="form-control" id="subject" style="background-color: inherit; border-color: black;">
+                           
+
+                           <select class="form-select" id="tabletype"  required class="form control" style="background-color: inherit; border-color: black;">
+                             <option value="choose d" disabled style="background-color: #fee2b3;">Choose table type: </option>
+                             <option value="birthday" style="background-color: #fee2b3; border-color: black;">Birthday -> ₦10000 </option>
+                             <option value="date" style="background-color: #fee2b3; border-color: black;">Date -> ₦5000</option>
+                             <option value="officialmeeting" style="background-color: #fee2b3; border-color: black;">Official Meeting -> ₦8000</option>
+                             <option value="hangout" style="background-color: #fee2b3; border-color: black;">Hangout -> ₦6000 </option>
+                           </select>
                            <br>
                            <div class="row">
                               <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                <input type="datetime-local" placeholder="Date"  required class="form-control" id="date" style="background-color: inherit; border-color: black;">
                              </div>
                               <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                               <input type="number" min="1"  required placeholder="Number Of persons" class="form-control" id="number" style="background-color: inherit;  border-color: black;">
+                               <input type="number" min="1" max="8"  required placeholder="Number Of persons" class="form-control" id="number" style="background-color: inherit;  border-color: black;">
                               </div>
                            </div>
                            <br>
